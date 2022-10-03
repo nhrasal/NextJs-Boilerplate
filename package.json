@@ -1,24 +1,43 @@
 {
-  "name": "next-scaffolding",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.3.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "18.8.0",
-    "@types/react": "18.0.21",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.24.0",
-    "eslint-config-next": "12.3.1",
-    "typescript": "4.8.4"
-  }
+	"name": "next-scaffolding",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "env-cmd -f ./env/.env.local next dev -p 8000",
+		"dev:win": "env-cmd -f ./env/.env.local next dev -p 8000",
+		"dev:dev": "env-cmd -f ./env/.env.dev  next dev -p 8000",
+		"dev:prod": "env-cmd -f ./env/.env.prod  next dev -p 8000",
+		"dev:dev-win": "env-cmd -f ./env/.env.dev  next dev -p 8000",
+		"build": "next build",
+		"build:dev": "env-cmd -f ./env/.env.dev next build",
+		"build:prod": "env-cmd -f ./env/.env.prod next build",
+		"build-stats": "cross-env ANALYZE=true npm run build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"axios": "^0.27.2",
+		"bootstrap": "^5.2.0",
+		"env-cmd": "^10.1.0",
+		"jwt-decode": "^3.1.2",
+		"next": "12.3.1",
+		"next-seo": "^5.5.0",
+		"node-sass": "^7.0.1",
+		"nprogress": "^0.2.0",
+		"react": "18.2.0",
+		"react-bootstrap": "^2.5.0",
+		"react-dom": "18.2.0",
+		"react-toastify": "^9.0.8",
+		"sass": "^1.54.8"
+	},
+	"devDependencies": {
+		"@next/bundle-analyzer": "^12.2.5",
+		"@types/node": "18.8.0",
+		"@types/nprogress": "^0.2.0",
+		"@types/react": "18.0.21",
+		"@types/react-dom": "18.0.6",
+		"eslint": "8.24.0",
+		"eslint-config-next": "12.3.1",
+		"typescript": "4.8.4"
+	}
 }
