@@ -18,7 +18,7 @@ const Main = (props: IMainProps) => {
 	useEffect(() => {
 		const goTop = document.getElementById("go-to-top");
 		const handleScroll = () => {
-			if (window.scrollY > 300) goTop?.classList.add("go__top");
+			if (window.scrollY > 30) goTop?.classList.add("go__top");
 			else goTop?.classList.remove("go__top");
 		};
 		window.addEventListener("scroll", handleScroll);
@@ -38,6 +38,10 @@ const Main = (props: IMainProps) => {
 				</div>
 			</div>
 			<Footer />
+
+			<div id="go-to-top" onClick={() => goToTop()} title="Go top">
+				<div className="icon">^</div>
+			</div>
 		</div>
 	);
 };
