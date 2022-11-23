@@ -1,0 +1,57 @@
+@import '../../assets//scss/partials/variables';
+.header-section {
+	.main-nav {
+		background-color: #fff;
+		.left-nav {
+			.logo {
+				margin-right: 24px;
+				width: 150px;
+				height: 38px;
+			}
+			.menu {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				li {
+					a {
+						padding: 10px 24px;
+						font-weight: 400;
+						font-size: 18px;
+						line-height: 22px;
+					}
+				}
+			}
+			.search-section {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				padding: 8px 16px;
+				gap: 8px;
+				width: 111px;
+				height: 36px;
+				background: #f0f0f0;
+				border-radius: 16px;
+        margin-left: 8px;
+			}
+		}
+		.right-nav {
+			ul {
+				display: flex;
+				li {
+					a {
+						font-weight: 400;
+						font-size: 18px;
+						line-height: 22px;
+						padding: 10px 12px;
+					}
+				}
+				li.location {
+					a {
+						color: $primary__500;
+					}
+				}
+			}
+		}
+	}
+}

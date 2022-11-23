@@ -1,4 +1,4 @@
-import { STATUS_CONSTANT } from "@config/constants";
+import { STATUS_CONSTANT } from "../@config/constants";
 
 export const statusColorMapping = (
 	status: string,

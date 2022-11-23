@@ -1,0 +1,2 @@
+const data = [{}];
+export { data };

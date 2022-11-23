@@ -1,6 +1,6 @@
 export const AppConfig = {
-    site_name: "Starter",
-    title: "WebX ltd.",
-    description: "WebX landing",
-    locale: "en"
+	site_name: "Starter",
+	title: "HR ltd.",
+	description: "HR landing",
+	locale: "en",
 };

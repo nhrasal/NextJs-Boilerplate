@@ -1,0 +1,50 @@
+@import '../scss/partials/variables';
+p{
+  color: #263238;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+a{
+  color: #455A64;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+  &:hover{
+    color: $primary__500;
+    .icon{
+      color: $primary__500;
+    }
+  }
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-content{
+  min-height: 100vh;
+  height: 100%;
+} 
+
+
+
+// scrollbar design
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $primary__100;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+  background-color: $primary__100;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary__800;
+  border-radius: 10px;
+}
+

@@ -1,0 +1,185 @@
+
+$disable__bg: #fafafa !default;
+
+// colors
+$color__blue: #0070f4 !default;
+$color__green: #10c600 !default;
+$color__gray: #e5e5e5 !default;
+$color__darkGray: #747b7f !default;
+$color__light: #ebeef2 !default;
+$color__skyblue: #d4e2f1 !default;
+$color__black: #212529 !default;
+
+// $wx__primary: $green__dark__500!default;
+// $secondary: $neutral__500!default;
+
+$green__dark__500: #26a11c !default;
+
+// primary color shades
+$primary__100: #c1f2fe !default;
+$primary__200: #83cde0 !default;
+$primary__300: #00A4CF !default;
+$primary__400: #2db7da !default;
+$primary__500: #00A4CF !default;
+$primary__600: #0185a5 !default;
+$primary__700: #026b86 !default;
+$primary__800: #014050 !default;
+$primary__900: #011920 !default;
+
+// neutral color shades
+$neutral__100: #ffffff !default;
+$neutral__200: #f5f6f7 !default;
+$neutral__300: #f0f1f2 !default;
+$neutral__400: #dfe2e5 !default;
+$neutral__500: #bbbcbf !default;
+$neutral__600: #8c8c8c !default;
+$neutral__700: #595959 !default;
+$neutral__800: #434343 !default;
+$neutral__900: #1f1f1f !default;
+
+// primary color shades
+$blue__100: #f4f8fe !default;
+$blue__200: #e1eeff !default;
+$blue__300: #c5e0ff !default;
+$blue__400: #66aaf9 !default;
+$blue__500: #0573f5 !default;
+$blue__600: #0065db !default;
+$blue__700: #0059c2 !default;
+$blue__800: #1d518f !default;
+$blue__900: #002a5c !default;
+
+// green color shades
+$green__100: #f6ffed !default;
+$green__200: #d9f7be !default;
+$green__300: #b7eb8f !default;
+$green__400: #95de64 !default;
+$green__500: #73d13d !default;
+$green__600: #52c41a !default;
+$green__700: #389e0d !default;
+$green__800: #237804 !default;
+$green__900: #135200 !default;
+
+// red color shades
+$red__100: #fff1f0 !default;
+$red__200: #ffccc7 !default;
+$red__300: #ffa39e !default;
+$red__400: #ff7875 !default;
+$red__500: #ff4d4f !default;
+$red__600: #f5222d !default;
+$red__700: #cf1322 !default;
+$red__800: #a8071a !default;
+$red__900: #820014 !default;
+
+// orange color shades
+$orange__100: #fff7e6 !default;
+$orange__200: #ffe7ba !default;
+$orange__300: #ffd591 !default;
+$orange__400: #ffc069 !default;
+$orange__500: #ffa940 !default;
+$orange__600: #fa8c16 !default;
+$orange__700: #d46b08 !default;
+$orange__800: #ad4e00 !default;
+$orange__900: #873800 !default;
+
+// yellow color shades
+$yellow__100: #feffe6 !default;
+$yellow__200: #ffffb8 !default;
+$yellow__300: #fffb8f !default;
+$yellow__400: #fff566 !default;
+$yellow__500: #ffec3d !default;
+$yellow__600: #fadb14 !default;
+$yellow__700: #d4b106 !default;
+$yellow__800: #ad8b00 !default;
+$yellow__900: #876800 !default;
+
+// cyan color shades
+$cyan__100: #e6fffb !default;
+$cyan__200: #b5f5ec !default;
+$cyan__300: #87e8de !default;
+$cyan__400: #5cdbd3 !default;
+$cyan__500: #36cfc9 !default;
+$cyan__600: #13c2c2 !default;
+$cyan__700: #08979c !default;
+$cyan__800: #006d75 !default;
+$cyan__900: #00474f !default;
+
+// purple color shades
+$purple__100: #f9f0ff !default;
+$purple__200: #efdbff !default;
+$purple__300: #d3adf7 !default;
+$purple__400: #b37feb !default;
+$purple__500: #9254de !default;
+$purple__600: #722ed1 !default;
+$purple__700: #531dab !default;
+$purple__800: #391085 !default;
+$purple__900: #22075e !default;
+
+// magenta color shades
+$magenta__100: #fff0f6 !default;
+$magenta__200: #ffd6e7 !default;
+$magenta__300: #ffadd2 !default;
+$magenta__400: #ff85c0 !default;
+$magenta__500: #f759ab !default;
+$magenta__600: #eb2f96 !default;
+$magenta__700: #c41d7f !default;
+$magenta__800: #9e1068 !default;
+$magenta__900: #780650 !default;
+
+// gold color shades
+$gold__100: #fffbe6 !default;
+$gold__200: #fff1b8 !default;
+$gold__300: #ffe58f !default;
+$gold__400: #ffd666 !default;
+$gold__500: #ffc53d !default;
+$gold__600: #faad14 !default;
+$gold__700: #d48806 !default;
+$gold__800: #ad6800 !default;
+$gold__900: #874d00 !default;
+
+$primary: $primary__600 !default;
+$secondary: $color__darkGray !default;
+$success: $color__green !default;
+$info: $color__skyblue !default;
+$light: $color__light !default;
+$dark: $color__black !default;
+
+$header_height: 52px !default;
+$sidenav_width: 240px !default;
+$inner_padding: 2em !default;
+
+// hr
+$hr_background: #e2e2e2 !default;
+$hr_height: 2px !default;
+
+//Icon size
+$icon_xs: 0.7em !default;
+$icon_sm: 1.1em !default;
+$icon_md: 1.5em !default;
+$icon_lg: 2.5em !default;
+$icon_xl: 3em !default;
+
+//Icon Size in Table
+$icon_table: 1.3em !default;
+
+//input Height
+$input_text_height: 35px !default;
+
+// Button Height
+$button-height: 35px !default;
+
+// Input Font Size
+$input_font_size: 0.8rem !default;
+$th_font_size: 0.8rem !default;
+$td_font_size: 0.8rem !default;
+
+// Body Font Size
+$body_font_size: 0.8rem !default;
+
+// Tabs Link Font Size
+$tab_link_font_size: 0.95rem !default;
+
+// Sidebar Font Size
+$sidebar_font_size: 0.8rem !default;
+
+// Form subtitle Size
+$form_subtitle_size: 0.95rem !default;
