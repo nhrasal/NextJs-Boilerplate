@@ -1,10 +1,11 @@
 import axios from "axios";
-import { LocalStorageService } from "../@services/utils/localStorage.service";
+import { LocalStorage } from "../@services/utils/localStorage.service";
 
 import { ENV } from "./ENV.config";
+import { ACCESS_TOKEN } from "../@constants/auth.constants";
 
 const instance = axios.create({
-	baseURL: ENV.ApiEndpoint,
+	baseURL: ENV.ApiEndpoint as string,
 	headers: {
 		"Content-Type": "application/json",
 		Accept: "application/json",
@@ -13,12 +14,8 @@ const instance = axios.create({
 
 instance.interceptors.request.use(
 	(config: any) => {
-		const accessToken = LocalStorageService.get("accessToken") || null;
-		const uid = LocalStorageService.get("uid") || null;
-		const resetToken = LocalStorageService.get("token") || null;
+		const accessToken = LocalStorage.get(ACCESS_TOKEN) || null;
 		if (accessToken) config.headers.Authorization = `Bearer ${accessToken}`;
-		if (uid) config.headers.uid = uid;
-		if (resetToken) config.headers.token = resetToken;
 		return config;
 	},
 	(error) => {
@@ -30,9 +27,9 @@ instance.interceptors.request.use(
 		}
 
 		return Promise.reject({
-			body: false,
-			status: 404,
-			message: "server not responding",
+			body: null,
+			status: 500,
+			message: "Something went wrong!",
 		});
 	}
 );
@@ -42,7 +39,7 @@ instance.interceptors.response.use(
 		if (res.data.status === 200) return { ...res.data };
 
 		if (res.data.status === 401) {
-			LocalStorageService.clear();
+			LocalStorage.clear();
 		}
 
 		return Promise.reject({
@@ -54,8 +51,7 @@ instance.interceptors.response.use(
 	(error) => {
 		if (error.response) {
 			if (error.response.data.status === 401) {
-				LocalStorageService.clear();
-				// window.location.reload();
+				LocalStorage.clear();
 			}
 
 			if (error?.response?.data?.error) {

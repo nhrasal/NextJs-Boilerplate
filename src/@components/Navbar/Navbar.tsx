@@ -3,29 +3,35 @@
 import Link from "next/link";
 import React from "react";
 import "./Navbar.scss";
-import logo from "../../assets/images/logo.png";
 import Icon from "../Icon/Icon";
+import {
+	ABOUT_US,
+	CONTACT,
+	HOME,
+	MORE,
+	SERVICES,
+} from "@constants/internal-routes.contants";
 
 const navLink = [
 	{
 		id: 1,
 		label: "Contact",
-		link: "/contact",
+		link: CONTACT,
 	},
 	{
 		id: 2,
 		label: "About us",
-		link: "/about-us",
+		link: ABOUT_US,
 	},
 	{
 		id: 3,
 		label: "Services",
-		link: "/services",
+		link: SERVICES,
 	},
 	{
 		id: 4,
 		label: "More",
-		link: "more",
+		link: MORE,
 	},
 ];
 
@@ -36,10 +42,7 @@ function Navbar() {
 				<div className="navbar d-flex justify-content-between">
 					<div className="left-nav d-flex">
 						<div className="logo">
-							<Link href="/">
-								{/* <img src={logo} alt="logo" /> */}
-								logo
-							</Link>
+							<Link href={HOME}>Logo</Link>
 						</div>
 						<ul className="menu">
 							{navLink.map((item, index) => {
@@ -51,7 +54,11 @@ function Navbar() {
 							})}
 						</ul>
 						<div className="search-section">
-							<Icon icon="search" /> Search
+							<input
+								type="search"
+								className="form-control form-control-sm w-100 rounded"
+								placeholder="Search..."
+							/>
 						</div>
 					</div>
 					<div className="right-nav d-flex">

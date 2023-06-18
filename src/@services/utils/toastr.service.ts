@@ -1,9 +1,8 @@
-import { toast } from "react-toastify";
+import { toast as rt } from "react-toastify";
 
-export const ToastService = {
-	success: (message: string): any => toast.success(message || "Success"),
-	error: (message: string): any =>
-		toast.error(message || "Something went wrong!"),
-	info: (message: string): any => toast.success(message || "Information!"),
-	warning: (message: string): any => toast.warning(message || "Warning!"),
+export const toast = {
+	success: (message: string): any => rt.success(message || "Success"),
+	error: (message: string): any => rt.error(message || "Something went wrong!"),
+	info: (message: string): any => rt.success(message || "Information!"),
+	warning: (message: string): any => rt.warning(message || "Warning!"),
 };
