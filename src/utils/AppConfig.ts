@@ -1,6 +1,6 @@
 export const AppConfig = {
-    site_name: "Starter",
-    title: "WebX ltd.",
-    description: "WebX landing",
-    locale: "en"
+	site_name: "Starter",
+	title: "Next",
+	description: "Next boilerplate",
+	locale: "en",
 };
